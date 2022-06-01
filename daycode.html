@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;600&display=swap');
+
+
+
+.form-container-unique {
+	max-width:1018px;
+					margin:0 auto;
+					padding: 20px;
+					background-color:#1B2A42;
+					height:auto;
+			}
+
+.row-unique	{
+	width:100%;
+	padding-top:1px;
+}
+
+.header{
+	color:#FFFFFF;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size:2.5em;
+	font-weight:200;
+	margin-left:1.4%;
+
+}
+
+
+.subheader{
+	color:#FFFFFF;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size:1.2em;
+	font-weight:300px;
+	margin-bottom:5px;
+	margin-left:1.4%;
+
+}
+
+.positioning{
+	padding-bottom:1.4%;
+}
+
+
+.positioning2{
+	margin-top:130px;
+	margin-left:1.4%;
+
+}
+
+.form-field{
+	color:#FFFFFF;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size:.8em;
+	font-weight:300px;
+	 text-transform: uppercase;
+margin-top:15px;
+}
+
+
+.form-field input{
+	border: 1px;
+	border-color:#D9D9D6;
+}
+
+
+.form-field button{
+	font-family: Nunito Sans;
+	font-weight: 300;
+	width:154px;
+	height:40px;
+	font-style: inherit;
+	border-radius: 0;
+	background-color:#1B2A42;
+	font-size: 1.2em;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	border: 1px solid #FFFFFF;
+	line-height: 1.4;
+	margin-top:20px;
+	margin-left:1.4%;
+
+}
+
+.form-field button:hover{
+	font-family: Nunito Sans;
+	font-weight: 300;
+	width:154px;
+	height:40px;
+	font-style: inherit;
+	border-radius: 0;
+	background-color:#07979c;
+	color: #F1F8FE;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	line-height: 1.4;
+}
+
+input{
+	height:30px;
+}
+
+
+.col1{
+	width:21.5%;
+	margin-left:1.4%;
+}
+
+.col1 input{
+	width:100%;
+
+}
+
+.col2{
+	width:44.3%;
+	margin-left:1.4%;
+
+}
+
+.col2 input{
+	width:100%;
+}
+
+
+.col3{
+	width:100%;
+	margin-left:1.4%;
+
+}
+
+.col3 .ckb-field{
+	width:10%;
+	height:25px;
+	float:left;
+}
+
+.col3 input{
+	height:50px;
+
+}
+
+
+input[type="checkbox" i] {
+height:20px;
+width:30%;
+margin-top:-20px;
+}
+
+
+.right{
+	float:right;
+}
+
+.left{
+	float:left;
+}
+
+
+
+.col4{
+	width:30%;
+}
+
+
+.col4 input{
+	height:95px;
+	width:100%
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .col1{
+			width:50%;
+				 margin-left:2%;
+    }
+
+		.col2{
+			width:50%;
+			margin-left:2%;
+		}
+
+		.header{
+			font-family: 'Nunito Sans', sans-serif;
+			font-size:2em;
+			font-weight:200;
+			margin-left:1.4%;
+
+		}
+
+
+		.subheader{
+			font-family: 'Nunito Sans', sans-serif;
+			font-size:1em;
+			font-weight:300px;
+			margin-bottom:5px;
+			margin-left:1.4%;
+
+		}
+
+		.col4{
+			width:40%;
+			margin-top:-100px;
+		}
+
+		.col4 input{
+			height:230px;
+		}
+
+
+		.form-field{
+			font-family: 'Nunito Sans', sans-serif;
+			font-size:.6em;
+			font-weight:300px;
+			 text-transform: uppercase;
+			 margin-top:5px;
+		}
+
+
+		.form-field button{
+			font-family: Nunito Sans;
+			font-weight: 300;
+			width:154px;
+			height:40px;
+			font-style: inherit;
+			border-radius: 0;
+			background-color:#1B2A42;
+			font-size: 1.2em;
+			color:#FFFFFF;
+			text-transform: uppercase;
+			border: 1px solid #FFFFFF;
+			line-height: 1.4;
+			margin-top:20px;
+			margin-left:1.4%;
+
+		}
+
+		.form-field button:hover{
+			font-family: Nunito Sans;
+			font-weight: 300;
+			width:154px;
+			height:40px;
+			font-style: inherit;
+			border-radius: 0;
+			background-color:#07979c;
+			color: #F1F8FE;
+			font-size: 1.2em;
+			text-transform: uppercase;
+			line-height: 1.4;
+		}
+
+
+		.positioning2{
+			margin-top:280px;
+			margin-left:1.4%;
+		}
+
+		.col3{
+			width:100%;
+			margin-left:1.4%;
+			margin-top:10px;
+
+		}
+
+		.col3 .ckb-field{
+			width:30%;
+			height:25px;
+			float:left;
+		}
+
+		.col3 input{
+			height:20px;
+
+		}
+	}
+
+	</style>
+	</head>
+<body>
+
+
+	<form id="azula_form" action="https://qcabo.com/azula-form/?message=sent" method="post" onsubmit="return submitAzulaForm();">
+
+
+			<div class="form-container-unique">
+				<div class="row-unique">
+						<div class="header">
+						DISCOVER MORE ABOUT AZULA
+					</div>
+				</div>
+
+		<div class="row-unique">
+			<div class="subheader positioning">
+			If you’re ready to learn more about Azula, our amenities, our floorplans and our residences, we’d love to help you.
+			<br> Please complete the form below, and a representative will be in touch shortly.
+			</div>
+		</div>
+
+				<div class="row-unique">
+					<div class="col1 left">
+					<div class="form-field">
+						<label>First Name *</label>
+						<input type="text" name="contact[FirstName]" onblur="FFD_Populate_Form_Fields('FirstName', this)" / required >
+					</div>
+			</div>
+
+			<div class="col1 left">
+					<div class="form-field">
+						<label>Last Name *</label>
+						<input type="text" name="contact[LastName]" onblur="FFD_Populate_Form_Fields('LastName', this)" / required>
+					</div>
+					</div>
+
+
+
+			<div class="col1 left">
+			<div class="form-field">
+				<label>Phone</label>
+				<input type="tel" name="contact[Phone]" onblur="FFD_Populate_Form_Fields('Phone', this)" / required>
+			</div>
+			</div>
+
+			</div>
+
+			<div class="col4 right">
+				<div class="form-field">
+					<label>Comments</label>
+					<input type="text" name="contact[pba__Comment_pb__c]" onblur="FFD_Populate_Form_Fields('Comments', this)"/>
+				</div>
+			</div>
+
+					<div class="row-unique">
+						<div class="col2 left">
+							<div class="form-field">
+								<label>Email *</label>
+								<input type="email" name="contact[Email]" onblur="FFD_Populate_Form_Fields('Email', this)" / required>
+							</div>
+							</div>
+
+
+					<div class="col1 left">
+					<div class="form-field">
+						<label>Mailing Postal Code</label>
+						<input type="number" name="contact[MailingPostalCode]" onblur="FFD_Populate_Form_Fields('MailingPostalCode', this)" />
+					</div>
+			</div>
+			</div>
+
+			<div class="row-unique">
+				<div class="subheader positioning2">
+			Please send me more information about following floorplans
+				</div>
+			</div>
+
+
+
+			<div class="row-unique">
+				<div class="col3 left">
+					<div class="form-field">
+						<div class="ckb-field">
+							<input type="checkbox" value="Uno" id="ckb_uno" onchange="FFD_updateFormNameField(this)" />
+							<label for="ckb_uno">Uno</label>
+						</div>
+						<div class="ckb-field">
+							<input type="checkbox" value="Dos" id="ckb_dos" onchange="FFD_updateFormNameField(this)" />
+							<label for="ckb_dos">Dos</label>
+						</div>
+						<div class="ckb-field">
+							<input type="checkbox" value="Tres" id="ckb_tres" onchange="FFD_updateFormNameField(this)" />
+							<label for="ckb_tres">Tres</label>
+						</div>
+					</div>
+			</div>
+			</div>
+
+
+
+			<input type="hidden" name="contact[LeadSource]" value="Azula Website" />
+			<input type="hidden" name="contact[Project_Email__c]" value="" id="__Project_Email__c" />
+
+			<input type="hidden" name="contact[Database_Project__c]" value="Azula" />
+			<input type="hidden" name="request[Database_Project__c]" value="Azula" />
+			<input type="hidden" name="contact[Traffic_Source__c]" value="Form Submission " />
+			<input type="hidden" name="request[Traffic_Source__c]" value="Form Submission " />
+			<input type="hidden" name="contact[pba__LeadRoutingSource__c]" value="Azula" />
+			<input type="hidden" name="request[Routing_Source__c]" value="Azula" />
+
+			<input type="hidden" name="contact[CID__c]" value="" id="c__cid__c" />
+			<input type="hidden" name="request[CID__c]" value="" id="r__cid__c" />
+			<input type="hidden" name="contact[Form_Name__c]" value="" id="c__Form_Name__c" />
+			<input type="hidden" name="request[Form_Name__c]" value="" id="r__Form_Name__c" />
+			<input type="hidden" name="contact[utm_source__c]" value="" id="c__utm_source__c" />
+			<input type="hidden" name="request[utm_source__c]" value="" id="r__utm_source__c" />
+			<input type="hidden" name="contact[utm_medium__c]" value="" id="c__utm_medium__c" />
+			<input type="hidden" name="request[utm_medium__c]" value="" id="r__utm_medium__c" />
+			<input type="hidden" name="contact[utm_campaign__c]" value="" id="c__utm_campaign__c" />
+			<input type="hidden" name="request[utm_campaign__c]" value="" id="r__utm_campaign__c" />
+			<input type="hidden" name="contact[utm_content__c]" value="" id="c__utm_content__c" />
+			<input type="hidden" name="request[utm_content__c]" value="" id="r__utm_content__c" />
+			<input type="hidden" name="contact[utm_name__c]" value="" id="c__utm_name__c" />
+			<input type="hidden" name="request[utm_name__c]" value="" id="r__utm_name__c" />
+
+			<input type="hidden" name="request[LeadSource__c]" value="Azula Website" />
+			<input type="hidden" name="request[URL__c]" value="" id="__PageURL" />
+			<input type="hidden" name="request[Inquiry_First_Name__c]" value="" id="__Inquiry_First_Name__c" />
+			<input type="hidden" name="request[Inquiry_Last_Name__c]" value="" id="__Inquiry_Last_Name__c" />
+			<input type="hidden" name="request[Inquiry_Phone__c]" value="" id="__Inquiry_Phone__c" />
+			<input type="hidden" name="request[pba__PostalCode_pb__c]" value="" id="__pba__PostalCode_pb__c" />
+			<input type="hidden" name="request[pba__Comments__c]" value="" id="__pba__Comments__c" />
+
+			<input type="hidden" name="success_url" value="https://azulabaja.com/thank-you" />
+
+
+		<div class="form-field">
+			<button type="submit" id="azula_submit_button">Submit</button>
+		</div>
+</div>
+	</form>
+
+	<script>
+		function submitAzulaForm(){
+			document.getElementById('azula_submit_button').disabled = true;
+			return true;
+		}
+		function FFD_updateFormNameField(field){
+			var ckb_ids = [ 'ckb_uno', 'ckb_dos', 'ckb_tres' ];
+			var formName = '';
+			for(var c=0; c<ckb_ids.length; c++) {
+				var cb = document.getElementById(ckb_ids[c]);
+				if(cb.checked == true) { formName += cb.value+', '; }
+			}
+			formName = formName.slice(0, -2);
+			document.getElementById('c__Form_Name__c').value = formName;
+			document.getElementById('r__Form_Name__c').value = formName;
+		}
+		function FFD_Populate_Form_Fields(id, field){
+			if(id == 'FirstName'){ document.getElementById('__Inquiry_First_Name__c').value = field.value; }
+			if(id == 'LastName'){ document.getElementById('__Inquiry_Last_Name__c').value = field.value; }
+			if(id == 'Phone'){ document.getElementById('__Inquiry_Phone__c').value = field.value; }
+			if(id == 'MailingPostalCode'){ document.getElementById('__pba__PostalCode_pb__c').value = field.value; }
+			if(id == 'Comments'){ document.getElementById('__pba__Comments__c').value = field.value; }
+			if(id == 'Email'){ document.getElementById('__Project_Email__c').value = 'Azula.' + field.value; }
+		}
+		function getURLParms(url){
+			if(url && url.indexOf("?") > -1){
+				var parms = url.split('?');
+				if(parms.length>1){
+					parms = parms[1];
+					if(parms.indexOf('&')>-1){ parms = parms.split('&'); }
+					else { parms = [parms]; }
+					var obj = {};
+					for (var u=0;u<parms.length;u++) {
+						if(!parms[u]) continue;
+						parms[u] = parms[u].split('=');
+						obj[parms[u][0]] = parms[u][1];
+					}
+					return obj;
+				}
+				return null;
+			}
+			else {
+				return null;
+			}
+		}
+		function setCookie(cname,cvalue,exdays) {
+			const d = new Date();
+			d.setTime(d.getTime() + (exdays*24*60*60*1000));
+			let expires = "expires=" + d.toUTCString();
+			document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+		}
+		function getCookie(cname) {
+			let name = cname + "=";
+			let decodedCookie = decodeURIComponent(document.cookie);
+			let ca = decodedCookie.split(';');
+			for(let i = 0; i < ca.length; i++) {
+				let c = ca[i];
+				while (c.charAt(0) == ' ') { c = c.substring(1); }
+				if (c.indexOf(name) == 0) { return c.substring(name.length, c.length); }
+			}
+			return "";
+		}
+		function checkCookie(c) {
+			let ck = getCookie(c);
+			if (ck) { return true; }
+			else { return false; }
+		}
+		function fillUtmFields(){
+			const utm_fields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_name', 'cid'];
+			utm_fields.forEach(function (v, i) {
+				if(checkCookie(v)){
+					document.getElementById('c__'+v+'__c').value = getCookie(v);
+					document.getElementById('r__'+v+'__c').value = getCookie(v);
+				}
+			});
+		}
+		function setDefaultUtmInCookies(){
+			const utm_fields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_name', 'cid'];
+			const url_parms = getURLParms(window.location.href);
+			utm_fields.forEach(function (v, i) {
+				if(url_parms && url_parms[v]){ setCookie(v, url_parms[v], 1); }
+			});
+			fillUtmFields();
+		}
+		setDefaultUtmInCookies();
+		document.getElementById('__PageURL').value = window.location.href;
+	</script>
+</body>
+</html>
